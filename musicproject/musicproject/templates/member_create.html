@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Create</title>
+    </head>
+
+    <body>
+        <h2>Create Member</h2>
+        <form action="" method="post">
+            {% crsf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Save"/>
+        </form>
+    </body>
+</html>
